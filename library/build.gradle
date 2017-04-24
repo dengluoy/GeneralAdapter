@@ -1,0 +1,37 @@
+apply plugin: 'com.android.library'
+apply from: 'bintray.gradle'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    lintOptions {
+        abortOnError false
+    }
+
+    defaultConfig{
+        minSdkVersion 17
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+}
+group = 'it.generaladapter'
+version = '1.0'
+
+dependencies {
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+
+}
+
+task javadoc(type: Javadoc) {
+    options.encoding = "utf-8"
+}
+
+//publish{
+//    userOrg = 'davidhello6' //bintray.com用户名
+//    groupId = 'it.generaladapter' //jcenter上的路径
+//    artifactId = 'generaladapter' //clear项目名称
+//    publishVersion = '1.0.0'//版本号
+//    desc = 'this is a nice recyclerview adapter'//描述
+//    website = 'https://github.com/dengluoy/generaladapter'//网站
+//}

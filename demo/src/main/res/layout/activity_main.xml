@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/linear_vertical_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="linear_vertical" />
+
+    <Button
+        android:id="@+id/linear_horizontal_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="linear_horizontal" />
+
+    <Button
+        android:id="@+id/gridview_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="grid_view" />
+
+    <Button
+        android:id="@+id/staggered_gridview_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="StaggeredGridView" />
+</LinearLayout>
