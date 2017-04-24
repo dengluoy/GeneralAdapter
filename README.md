@@ -1,0 +1,2 @@
+# GeneralAdapter
+一个可实现加载更多和添加头部的RecyclerViewAdapter
