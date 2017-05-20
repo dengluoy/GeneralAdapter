@@ -62,6 +62,7 @@ public class LinearVerticalActivity extends AppCompatActivity implements TaskMan
 
         mCurrentCounter = dataList.size();
 
+        //原有Adapter
         mDataAdapter = new DataAdapter(this, R.layout.item_vertical_text);
         mDataAdapter.setItemCickListener(new DataAdapter.OnItemClickListener() {
             @Override
@@ -90,7 +91,6 @@ public class LinearVerticalActivity extends AppCompatActivity implements TaskMan
                 }
             }
         });
-
     }
 
     @Override

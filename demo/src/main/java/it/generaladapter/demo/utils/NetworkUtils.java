@@ -41,17 +41,17 @@ public class NetworkUtils {
         ConnectivityManager connManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
 
         // Wifi
-        NetworkInfo.State state = connManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState();
-        if (state == NetworkInfo.State.CONNECTED || state == NetworkInfo.State.CONNECTING) {
-            return NETWORN_WIFI;
-        }
+//        NetworkInfo.State state = connManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState();
+//        if (state == NetworkInfo.State.CONNECTED || state == NetworkInfo.State.CONNECTING) {
+//            return NETWORN_WIFI;
+//        }
 
         // 3G
-        state = connManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState();
-        if (state == NetworkInfo.State.CONNECTED || state == NetworkInfo.State.CONNECTING) {
-            return NETWORN_MOBILE;
-        }
-        return NETWORN_NONE;
+//        state = connManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState();
+//        if (state == NetworkInfo.State.CONNECTED || state == NetworkInfo.State.CONNECTING) {
+//            return NETWORN_MOBILE;
+//        }
+        return NETWORN_WIFI;
     }
 
     public static String getMobileIP(Context context) {
